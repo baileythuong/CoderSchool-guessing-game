@@ -1,4 +1,5 @@
 let guesses = 10;
+let guessCounter = 0;
 let randomNumber = Math.floor(Math.random() * 100 + 1);
 console.log("the random number is", randomNumber);
 
@@ -56,7 +57,7 @@ function gameCounter() {
     time += 1;
     document.getElementById("timeRemaining").innerHTML=time;
 
-    if(time === 5) {
+    if(time === 30) {
         stopCounter();
     }
     }, 1000);
@@ -64,6 +65,9 @@ function gameCounter() {
 
 function stopCounter() {
     clearInterval(gameTime);
+    document.getElementById("guessCounterAlert").innerHTML=`Time's out, please start over.`;
+    document.getElementById("value").disabled = true;
 }
 
-// gameCounter();
+  // displaying guess counter
+  gameCounter();
