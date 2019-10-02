@@ -1,4 +1,6 @@
 # CoderSchool Guessing Game
+## Created by: Thương. It is currently not styled at all, but I will come back to it as soon as I can, so... to be continued. View online [here](https://sad-jackson-a2e3c6.netlify.com/).
+
 The following **required** functionalities are completed:
 * [X] The user can attempt to guess a random integer between 1 and 100 by entering a value into a textbox. 
 * [X] The user can press a button to check their guess, and receive feedback on whether their guess was too low, too high, or correct. 
