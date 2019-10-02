@@ -40,6 +40,8 @@ function guessTheNumber() {
     document.getElementById("guessPrompt").innerHTML = `${userGuess} is the correct number!`;
     document.getElementById("value").value = "";
     history.push(userGuess);
+    document.getElementById("value").disabled = true;
+    clearInterval(gameTime);
   }
   // displaying history
   document.getElementById("history").innerHTML = `You've guessed the following numbers: ${history.join(", ")}`;
