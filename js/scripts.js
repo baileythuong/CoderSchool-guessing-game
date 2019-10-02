@@ -66,4 +66,4 @@ function stopCounter() {
     clearInterval(gameTime);
 }
 
-gameCounter();
+// gameCounter();
